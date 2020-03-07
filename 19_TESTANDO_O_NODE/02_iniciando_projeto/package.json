@@ -1,0 +1,14 @@
+{
+  "name": "02_iniciando_projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João <matheusbudkewiczbattisti@gmail.com> (http://www.horadecodar.com.br/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

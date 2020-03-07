@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Finder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Job Finder</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Ver Vagas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="add.html">Abrir Vaga</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="add-form-container" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Divulgue a vaga preenchendo o formulário</h1>
+      </div>
+      <div id="form-box" class="col-md-12">
+        <h2>Preencha os dados da melhor forma possível para encontrar mais rápido seu dev!</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="title">Título da vaga:</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga" required>
+            <small id="titleHelp" class="form-text text-muted">O título é muito importante, seja claro e objetivo.</small>
+          </div>
+          <div class="form-group">
+            <label for="description">Descrição da vaga:</label>
+            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descreva as atividades do desenvolvedor..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="company">Empresa contratante:</label>
+            <input type="text" class="form-control" id="company" name="company" placeholder="Digite a empresa que vai contratar" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail para contato:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail para contato" required>
+          </div>
+          <div class="form-group">
+            <label for="salary">Salário oferecido:</label>
+            <input type="text" class="form-control" id="salary" name="salary" placeholder="Digite o Salário da vaga" required>
+          </div>
+          <input type="hidden" name="new_job" value="1">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
